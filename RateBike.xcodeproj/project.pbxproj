@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7F4FC9C246062AD0038A04C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FC9B246062AD0038A04C /* AppDelegate.swift */; };
+		B7F4FC9E246062AD0038A04C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FC9D246062AD0038A04C /* SceneDelegate.swift */; };
+		B7F4FCA6246062AD0038A04C /* RateBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCA4246062AD0038A04C /* RateBike.xcdatamodeld */; };
+		B7F4FCA8246062AF0038A04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F4FCA7246062AF0038A04C /* Assets.xcassets */; };
+		B7F4FCAB246062AF0038A04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F4FCA9246062AF0038A04C /* LaunchScreen.storyboard */; };
+		B7F4FCBD246063D00038A04C /* GeneralPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCB5246063D00038A04C /* GeneralPresenter.swift */; };
+		B7F4FCBE246063D00038A04C /* CoreDataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCB6246063D00038A04C /* CoreDataWorker.swift */; };
+		B7F4FCC0246063D00038A04C /* GeneralRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCB8246063D00038A04C /* GeneralRouter.swift */; };
+		B7F4FCC1246063D00038A04C /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCB9246063D00038A04C /* GeneralViewController.swift */; };
+		B7F4FCC2246063D00038A04C /* GeneralInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCBA246063D00038A04C /* GeneralInteractor.swift */; };
+		B7F4FCC3246063D00038A04C /* GeneralConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCBB246063D00038A04C /* GeneralConfigurator.swift */; };
+		B7F4FCC7246064040038A04C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCC6246064040038A04C /* Protocols.swift */; };
+		B7F4FCC9246065190038A04C /* GeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F4FCC8246065190038A04C /* GeneralViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7F4FC98246062AD0038A04C /* RateBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F4FC9B246062AD0038A04C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7F4FC9D246062AD0038A04C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7F4FCA5246062AD0038A04C /* RateBike.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RateBike.xcdatamodel; sourceTree = "<group>"; };
+		B7F4FCA7246062AF0038A04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7F4FCAA246062AF0038A04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7F4FCAC246062AF0038A04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F4FCB5246063D00038A04C /* GeneralPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPresenter.swift; sourceTree = "<group>"; };
+		B7F4FCB6246063D00038A04C /* CoreDataWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWorker.swift; sourceTree = "<group>"; };
+		B7F4FCB8246063D00038A04C /* GeneralRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRouter.swift; sourceTree = "<group>"; };
+		B7F4FCB9246063D00038A04C /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		B7F4FCBA246063D00038A04C /* GeneralInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInteractor.swift; sourceTree = "<group>"; };
+		B7F4FCBB246063D00038A04C /* GeneralConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfigurator.swift; sourceTree = "<group>"; };
+		B7F4FCC6246064040038A04C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		B7F4FCC8246065190038A04C /* GeneralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7F4FC95246062AD0038A04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7F4FC8F246062AD0038A04C = {
+			isa = PBXGroup;
+			children = (
+				B7F4FC9A246062AD0038A04C /* RateBike */,
+				B7F4FC99246062AD0038A04C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7F4FC99246062AD0038A04C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FC98246062AD0038A04C /* RateBike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F4FC9A246062AD0038A04C /* RateBike */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FCC4246063EF0038A04C /* Base */,
+				B7F4FCB22460636E0038A04C /* Default */,
+				B7F4FCB3246063A90038A04C /* GeneralViewController */,
+				B7F4FCCA246066000038A04C /* CoreData */,
+				B7F4FCAC246062AF0038A04C /* Info.plist */,
+				B7F4FCA7246062AF0038A04C /* Assets.xcassets */,
+			);
+			path = RateBike;
+			sourceTree = "<group>";
+		};
+		B7F4FCB22460636E0038A04C /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FCA9246062AF0038A04C /* LaunchScreen.storyboard */,
+				B7F4FC9B246062AD0038A04C /* AppDelegate.swift */,
+				B7F4FC9D246062AD0038A04C /* SceneDelegate.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		B7F4FCB3246063A90038A04C /* GeneralViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FCBB246063D00038A04C /* GeneralConfigurator.swift */,
+				B7F4FCB9246063D00038A04C /* GeneralViewController.swift */,
+				B7F4FCBA246063D00038A04C /* GeneralInteractor.swift */,
+				B7F4FCB5246063D00038A04C /* GeneralPresenter.swift */,
+				B7F4FCB8246063D00038A04C /* GeneralRouter.swift */,
+				B7F4FCC8246065190038A04C /* GeneralViewController.xib */,
+			);
+			path = GeneralViewController;
+			sourceTree = "<group>";
+		};
+		B7F4FCC4246063EF0038A04C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FCC6246064040038A04C /* Protocols.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B7F4FCCA246066000038A04C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FCB6246063D00038A04C /* CoreDataWorker.swift */,
+				B7F4FCA4246062AD0038A04C /* RateBike.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7F4FC97246062AD0038A04C /* RateBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F4FCAF246062AF0038A04C /* Build configuration list for PBXNativeTarget "RateBike" */;
+			buildPhases = (
+				B7F4FC94246062AD0038A04C /* Sources */,
+				B7F4FC95246062AD0038A04C /* Frameworks */,
+				B7F4FC96246062AD0038A04C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RateBike;
+			productName = RateBike;
+			productReference = B7F4FC98246062AD0038A04C /* RateBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7F4FC90246062AD0038A04C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Сергей Вихляев";
+				TargetAttributes = {
+					B7F4FC97246062AD0038A04C = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B7F4FC93246062AD0038A04C /* Build configuration list for PBXProject "RateBike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7F4FC8F246062AD0038A04C;
+			productRefGroup = B7F4FC99246062AD0038A04C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7F4FC97246062AD0038A04C /* RateBike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7F4FC96246062AD0038A04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F4FCAB246062AF0038A04C /* LaunchScreen.storyboard in Resources */,
+				B7F4FCA8246062AF0038A04C /* Assets.xcassets in Resources */,
+				B7F4FCC9246065190038A04C /* GeneralViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7F4FC94246062AD0038A04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F4FCA6246062AD0038A04C /* RateBike.xcdatamodeld in Sources */,
+				B7F4FCBD246063D00038A04C /* GeneralPresenter.swift in Sources */,
+				B7F4FC9C246062AD0038A04C /* AppDelegate.swift in Sources */,
+				B7F4FCC2246063D00038A04C /* GeneralInteractor.swift in Sources */,
+				B7F4FCC3246063D00038A04C /* GeneralConfigurator.swift in Sources */,
+				B7F4FCC7246064040038A04C /* Protocols.swift in Sources */,
+				B7F4FCC0246063D00038A04C /* GeneralRouter.swift in Sources */,
+				B7F4FCC1246063D00038A04C /* GeneralViewController.swift in Sources */,
+				B7F4FCBE246063D00038A04C /* CoreDataWorker.swift in Sources */,
+				B7F4FC9E246062AD0038A04C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7F4FCA9246062AF0038A04C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F4FCAA246062AF0038A04C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7F4FCAD246062AF0038A04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7F4FCAE246062AF0038A04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7F4FCB0246062AF0038A04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RateBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iOSnick.RateBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7F4FCB1246062AF0038A04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RateBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iOSnick.RateBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7F4FC93246062AD0038A04C /* Build configuration list for PBXProject "RateBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F4FCAD246062AF0038A04C /* Debug */,
+				B7F4FCAE246062AF0038A04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F4FCAF246062AF0038A04C /* Build configuration list for PBXNativeTarget "RateBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F4FCB0246062AF0038A04C /* Debug */,
+				B7F4FCB1246062AF0038A04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B7F4FCA4246062AD0038A04C /* RateBike.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B7F4FCA5246062AD0038A04C /* RateBike.xcdatamodel */,
+			);
+			currentVersion = B7F4FCA5246062AD0038A04C /* RateBike.xcdatamodel */;
+			path = RateBike.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B7F4FC90246062AD0038A04C /* Project object */;
+}
