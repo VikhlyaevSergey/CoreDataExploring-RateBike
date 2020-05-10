@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B772C6842468278400A62A04 /* BikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B772C6822468278400A62A04 /* BikeTableViewCell.swift */; };
+		B772C6852468278400A62A04 /* BikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B772C6832468278400A62A04 /* BikeTableViewCell.xib */; };
 		B7F4FC9C246062AD0038A04C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FC9B246062AD0038A04C /* AppDelegate.swift */; };
 		B7F4FC9E246062AD0038A04C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FC9D246062AD0038A04C /* SceneDelegate.swift */; };
 		B7F4FCA6246062AD0038A04C /* RateBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCA4246062AD0038A04C /* RateBike.xcdatamodeld */; };
@@ -20,9 +22,16 @@
 		B7F4FCC3246063D00038A04C /* GeneralConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCBB246063D00038A04C /* GeneralConfigurator.swift */; };
 		B7F4FCC7246064040038A04C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCC6246064040038A04C /* Protocols.swift */; };
 		B7F4FCC9246065190038A04C /* GeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F4FCC8246065190038A04C /* GeneralViewController.xib */; };
+		B7F4FCCC2463398C0038A04C /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7F4FCCB2463398C0038A04C /* data.plist */; };
+		B7F4FCCE246339E30038A04C /* DefaultDataPlistWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCCD246339E30038A04C /* DefaultDataPlistWorker.swift */; };
+		B7F4FCD1246348EC0038A04C /* UIImage+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCD0246348EC0038A04C /* UIImage+URLSession.swift */; };
+		B7F4FCD324634D020038A04C /* UIColor+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCD224634D020038A04C /* UIColor+Parser.swift */; };
+		B7F4FCD624634DE50038A04C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FCD524634DE50038A04C /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B772C6822468278400A62A04 /* BikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTableViewCell.swift; sourceTree = "<group>"; };
+		B772C6832468278400A62A04 /* BikeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BikeTableViewCell.xib; sourceTree = "<group>"; };
 		B7F4FC98246062AD0038A04C /* RateBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F4FC9B246062AD0038A04C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F4FC9D246062AD0038A04C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +47,11 @@
 		B7F4FCBB246063D00038A04C /* GeneralConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfigurator.swift; sourceTree = "<group>"; };
 		B7F4FCC6246064040038A04C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		B7F4FCC8246065190038A04C /* GeneralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralViewController.xib; sourceTree = "<group>"; };
+		B7F4FCCB2463398C0038A04C /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		B7F4FCCD246339E30038A04C /* DefaultDataPlistWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataPlistWorker.swift; sourceTree = "<group>"; };
+		B7F4FCD0246348EC0038A04C /* UIImage+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+URLSession.swift"; sourceTree = "<group>"; };
+		B7F4FCD224634D020038A04C /* UIColor+Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Parser.swift"; sourceTree = "<group>"; };
+		B7F4FCD524634DE50038A04C /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B772C67F2468270200A62A04 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				B772C6822468278400A62A04 /* BikeTableViewCell.swift */,
+				B772C6832468278400A62A04 /* BikeTableViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		B7F4FC8F246062AD0038A04C = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +93,13 @@
 		B7F4FC9A246062AD0038A04C /* RateBike */ = {
 			isa = PBXGroup;
 			children = (
+				B7F4FCAC246062AF0038A04C /* Info.plist */,
 				B7F4FCC4246063EF0038A04C /* Base */,
+				B7F4FCD424634DD30038A04C /* Common */,
 				B7F4FCB22460636E0038A04C /* Default */,
 				B7F4FCB3246063A90038A04C /* GeneralViewController */,
 				B7F4FCCA246066000038A04C /* CoreData */,
-				B7F4FCAC246062AF0038A04C /* Info.plist */,
+				B7F4FCCF246348D60038A04C /* Extensions */,
 				B7F4FCA7246062AF0038A04C /* Assets.xcassets */,
 			);
 			path = RateBike;
@@ -99,6 +124,7 @@
 				B7F4FCB5246063D00038A04C /* GeneralPresenter.swift */,
 				B7F4FCB8246063D00038A04C /* GeneralRouter.swift */,
 				B7F4FCC8246065190038A04C /* GeneralViewController.xib */,
+				B772C67F2468270200A62A04 /* cells */,
 			);
 			path = GeneralViewController;
 			sourceTree = "<group>";
@@ -114,10 +140,29 @@
 		B7F4FCCA246066000038A04C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				B7F4FCB6246063D00038A04C /* CoreDataWorker.swift */,
+				B7F4FCCB2463398C0038A04C /* data.plist */,
+				B7F4FCCD246339E30038A04C /* DefaultDataPlistWorker.swift */,
 				B7F4FCA4246062AD0038A04C /* RateBike.xcdatamodeld */,
+				B7F4FCB6246063D00038A04C /* CoreDataWorker.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B7F4FCCF246348D60038A04C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FCD0246348EC0038A04C /* UIImage+URLSession.swift */,
+				B7F4FCD224634D020038A04C /* UIColor+Parser.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7F4FCD424634DD30038A04C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FCD524634DE50038A04C /* Errors.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +225,9 @@
 			files = (
 				B7F4FCAB246062AF0038A04C /* LaunchScreen.storyboard in Resources */,
 				B7F4FCA8246062AF0038A04C /* Assets.xcassets in Resources */,
+				B7F4FCCC2463398C0038A04C /* data.plist in Resources */,
 				B7F4FCC9246065190038A04C /* GeneralViewController.xib in Resources */,
+				B772C6852468278400A62A04 /* BikeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,11 +240,16 @@
 			files = (
 				B7F4FCA6246062AD0038A04C /* RateBike.xcdatamodeld in Sources */,
 				B7F4FCBD246063D00038A04C /* GeneralPresenter.swift in Sources */,
+				B772C6842468278400A62A04 /* BikeTableViewCell.swift in Sources */,
 				B7F4FC9C246062AD0038A04C /* AppDelegate.swift in Sources */,
 				B7F4FCC2246063D00038A04C /* GeneralInteractor.swift in Sources */,
 				B7F4FCC3246063D00038A04C /* GeneralConfigurator.swift in Sources */,
 				B7F4FCC7246064040038A04C /* Protocols.swift in Sources */,
+				B7F4FCD624634DE50038A04C /* Errors.swift in Sources */,
 				B7F4FCC0246063D00038A04C /* GeneralRouter.swift in Sources */,
+				B7F4FCD1246348EC0038A04C /* UIImage+URLSession.swift in Sources */,
+				B7F4FCD324634D020038A04C /* UIColor+Parser.swift in Sources */,
+				B7F4FCCE246339E30038A04C /* DefaultDataPlistWorker.swift in Sources */,
 				B7F4FCC1246063D00038A04C /* GeneralViewController.swift in Sources */,
 				B7F4FCBE246063D00038A04C /* CoreDataWorker.swift in Sources */,
 				B7F4FC9E246062AD0038A04C /* SceneDelegate.swift in Sources */,

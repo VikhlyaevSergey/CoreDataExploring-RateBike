@@ -13,31 +13,54 @@
 import UIKit
 
 protocol GeneralBusinessLogic {
+    func setupFirstData()
 }
 
 protocol GeneralDataStore {
-    var name: String { get set }
+    var bikes: [Bike] { get set }
 }
 
 class GeneralInteractor: NSObject, GeneralDataStore {
     weak var presenter: GeneralPresentationLogic!
-    var worker: CoreDataWorker?
-    var name: String = ""
+    var bikes: [Bike] = [] {
+        didSet {
+            print(bikes.count)
+        }
+    }
     
-    // MARK: Do something
+    // MARK: Func-s
 }
 
 extension GeneralInteractor: GeneralBusinessLogic {
-    
+    func setupFirstData() {
+        if !CoreDataWorker.shared.checkPreLoadedData() {
+            DefaultDataPlistWorker.shared.saveDataFromFileToCoreData { [weak self] (success, bikes, error) in
+                if success {
+                    guard let bikes = bikes else { return }
+                    presenter?.needToInsertRows(count: bikes.count, dataUpdatesBlock: { [weak self] in
+                        self?.bikes = bikes
+                    })
+                } else {
+                    
+                }
+            }
+        }
+    }
 }
 
 extension GeneralInteractor: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        print(bikes.count)
+        return bikes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: BikeTableViewCell.self), for: indexPath) as! BikeTableViewCell
+        
+        cell.cofigure(withBike: bikes[indexPath.row])
+        
+        return cell
     }
     
     

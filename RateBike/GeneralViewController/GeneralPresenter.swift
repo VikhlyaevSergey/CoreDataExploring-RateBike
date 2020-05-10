@@ -13,30 +13,49 @@
 import UIKit
 
 protocol GeneralPresentationLogic: class {
-    func presentSomething()
+    func needToInsertRows(count: Int, dataUpdatesBlock: ()->())
 }
 
 protocol GeneralViewControllerOutput {
-    func someActionTriggered()
+    func viewIsReady()
 }
 
 class GeneralPresenter: NSObject, GeneralPresentationLogic {
+    
     var interactor: GeneralBusinessLogic!
     weak var viewController: GeneralDisplayLogic!
     var router: GeneralRoutingLogic!
     
-    // MARK: Presentation Logic
+    weak var tableView: UITableView!
     
-    func presentSomething() {
-        viewController.displaySomething()
+    // MARK: Presentation Logic
+    func needToInsertRows(count: Int, dataUpdatesBlock: () -> ()) {
+        
+        dataUpdatesBlock()
+        tableView.reloadData()
+        /*
+        // counting
+        var indexPaths = [IndexPath]()
+        (0..<count).forEach { (row) in
+            indexPaths.append(IndexPath(row: row, section: 0))
+        }
+        
+        // updates
+        tableView.beginUpdates()
+        dataUpdatesBlock()
+        tableView.insertRows(at: indexPaths, with: .automatic)
+        tableView.endUpdates()*/
     }
 }
 
 extension GeneralPresenter: GeneralViewControllerOutput {
-    func someActionTriggered() {
+    func viewIsReady() {
+        interactor?.setupFirstData()
     }
 }
 
 extension GeneralPresenter: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
 }

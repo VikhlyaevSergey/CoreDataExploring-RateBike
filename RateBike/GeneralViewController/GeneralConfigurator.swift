@@ -26,8 +26,14 @@ final class GeneralConfigurator: BaseConfiguratorProtocol {
         presenter.interactor = interactor
         presenter.router = router
         
+        viewController.loadView()
+        viewController.viewDidLoad()
+        
+        presenter.tableView = viewController.tableView
         viewController.tableView.dataSource = interactor
         viewController.tableView.delegate = presenter
+        
+        presenter.viewIsReady()
     }
     
     class func rootViewController() -> UIViewController {

@@ -17,6 +17,9 @@ protocol GeneralDisplayLogic: class {
 }
 
 class GeneralViewController: UIViewController {
+    
+    fileprivate let xibNames = [String(describing: BikeTableViewCell.self)]
+    
     var presenter: GeneralViewControllerOutput!
     
     @IBOutlet weak var tableView: UITableView!
@@ -29,15 +32,18 @@ class GeneralViewController: UIViewController {
     }
     
     // MARK: Action
-    
-    func someAction() {
-        presenter.someActionTriggered()
-    }
 }
 
 // MARK: Setup
 extension GeneralViewController {
     private func setup() {
+        setupTableView()
+    }
+    
+    private func setupTableView() {
+        xibNames.forEach { (name) in
+            tableView.register(UINib(nibName: name, bundle: nil), forCellReuseIdentifier: name)
+        }
     }
 }
 

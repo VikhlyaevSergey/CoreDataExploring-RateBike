@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // SolutionLink: https://ioscoachfrank.com/remove-main-storyboard.html
-        window = UIWindow()
-        window?.rootViewController = GeneralConfigurator.rootViewController()
-        window?.makeKeyAndVisible()
+        //window = UIWindow()
+        //window?.rootViewController = GeneralConfigurator.rootViewController()
+        //window?.makeKeyAndVisible()
         // -
 
         return true
